@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ariel;
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(to right,#9373c4, #5275b5) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 280px;
+    /* height: 560px; */
+    background: #a08fcd;
+    opacity: 0.8;
+    margin: auto;
+    /* margin-top: 60px; */
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: column;
+    height: 100%;
+}
+
+section:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.animal {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: white;
+    margin: 20px;
+}
+
+.description {
+    display: flex;
+    align-content: flex-end;
+    font-size: 1.5em;
+    margin: 20px;
+    text-align: center;
+}
+
+.activities {
+    display: flex;
+    list-style-type: none;  
+    flex-direction: column; 
+    align-items: center;   
+}
+
+.activity {
+    display: flex;
+    border-bottom: 2px solid #9484c2;
+    width: 220px;
+    font-size: 1.5em;
+    margin: 10px;
+    padding-bottom: 8px ;
+    justify-content: center;
+}
+
+.activity:nth-last-child(1){
+    border: none;
+}
+
+.price {
+    font-size: 4em;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 4px 8px;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    border-radius: 4px;
+    background: yellow;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: auto;
+        gap:10px
+    } 
+}
